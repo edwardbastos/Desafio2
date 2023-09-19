@@ -1,0 +1,52 @@
+[
+	{
+		"title": "RedBull",
+		"description": "Bebida energizante con variados sabores de frutas",
+		"stock": "21",
+		"thumbnail": "https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/4WspfMuQ1AxHD5b9Wh2mT1/dcc6b599d7e5fd487603c6d185f1aef5/CO_RBED_250_Single-Unit_close_ambient_ORIGINAL_canwidth528px.png?w=175&fm=webp&q=90",
+		"category": "Energisante",
+		"price": "6800",
+		"code": "Ener001",
+		"id": 1
+	},
+	{
+		"title": "Red Bull Sugarfree",
+		"description": "Red Bull Sugarfree es Red Bull Energy Drink sin azúcar.",
+		"stock": "21",
+		"thumbnail": "https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/7B3oZWp5pZ0U4HHr76CIRn/9c25eec0020ece0f02c31ca3dfd58c3a/CO_RBSF_250_Single-Unit_close_ambient_ORIGINAL_canwidth528px.png?w=175&fm=webp&q=90",
+		"category": "Energisante",
+		"price": "6800",
+		"code": "Ener002",
+		"id": 2
+	},
+	{
+		"title": "RedBull Red Edition",
+		"description": "RedBull Red Edition con el fresco sabor de la sandia",
+		"stock": "21",
+		"thumbnail": "https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/4wqaQETvAzIcnMF7JMo7op/6fb845f7ff20820f50b0f1bea1b5b3a1/CO_RED-Watermelon-250ml_ambient_001_PCS.png?w=175&fm=webp&q=90",
+		"category": "Energisante",
+		"price": "6800",
+		"code": "Ener003",
+		"id": 3
+	},
+	{
+		"title": "RedBull Blue Edition",
+		"description": "RedBull Blue Edition. Una clasica, con el sabor de mora azul",
+		"stock": "21",
+		"thumbnail": "https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/1ifSlPtSd0wrdIrxgcNQCb/187c64c6acd085d2ac9de7cb9154f1ba/CO_RBBE_250_Single_Unit_close_ambient_ORIGINAL_DRES-2.png?w=175&fm=webp&q=90",
+		"category": "Energisante",
+		"price": "6800",
+		"code": "Ener004",
+		"id": 4
+	},
+	{
+		"title": "RedBull Green Edition",
+		"description": "RedBull Green Edition con el exotico sabor de la fruta del Dragon",
+		"stock": "21",
+		"thumbnail": "https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/7eJtxfv49ednrhWRS5pP0d/f89b61375aa3436b0b2f2496c5a33230/DRES_CO_RBGE_250_Single_Unit_close_ambient-1.png?w=175&fm=webp&q=90",
+		"category": "Energisante",
+		"price": "6800",
+		"code": "Ener005",
+		"id": 5
+	}
+]
