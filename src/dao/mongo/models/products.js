@@ -13,7 +13,7 @@ const schema = new mongoose.Schema({          //esquema de carga de datos de mi 
     },
     category: {        
         type:String,
-        enum:["Malbec", "Carmenere", "Tannat", "Merlot", "Cabernet Sauvignon"],
+        enum:["Supplements", "Energizing", "Snacks", "Sportswear"],
         required:true,
         index: true
     },

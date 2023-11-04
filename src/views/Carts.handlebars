@@ -1,13 +1,30 @@
-<h1>carts list</h1>
+<link rel="stylesheet" href="/css/carrito.css">
 
-{{#if cart}}
-    <p> id carrito: {{cart._id}}</p>
-    <br>
-    {{#each cart.products}}
-        <br>
-        <p> id producto: {{this.id_product}}</p>
-        <p> quantity producto: {{this.quantity}}</p>
-    {{/each}}
-{{else}}
-    <p>No se encontró ningún carrito.</p>
-{{/if}}
+<section class="cont_carrito">
+    <span><h1>tu carrito</h1></span>
+    <hr>
+    {{#if cart_filtrado}}
+        <span><p> <strong>id carrito</strong>: {{cart_filtrado.id}}</p></span>
+        <span><p> <strong>user id</strong>: {{cart_filtrado.usuario}}</p></span>
+
+        <div>
+            <a href="/products"><button>regresar tienda</button></a>
+            <a href="/"><button>regresar profile</button></a>
+        </div>
+        
+        <hr>
+        {{#if cart_filtrado.productos.length}}
+            {{#each cart_filtrado.productos}}
+                <br>
+                <span><p>{{this.f_title}} || <strong>cantidad: </strong>{{f_quantity}} || <strong>precio: </strong>{{this.f_price}}</p></span>
+                <!--<span><p> <strong>quantity producto</strong>: {{this.id_product.quantity}}</p></span>-->
+            {{/each}}
+
+            <h3>total:</h3>
+        {{else}}
+            <span><p>No hay productos en el carrito.</p></span>
+        {{/if}}
+    {{else}}
+        <span><p>No se encontró ningún carrito.</p></span>
+    {{/if}}
+</section>

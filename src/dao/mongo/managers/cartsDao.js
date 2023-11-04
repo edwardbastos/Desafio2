@@ -1,30 +1,45 @@
 import cartsModel from "../models/carts.js";
 
-export default class CartsManager {
+export default class CartsDao 
+{
 
-    updateProductQuantity = async (cartId, productId, quantity) => 
+    getCartByUserId = async (userId) => 
     {
-        try {
-            const cart = await cartsModel.findById(cartId);
-
-            if (!cart) throw new Error(`No se encontró el carrito con ID ${cartId}`);
-            
-
-            const productToUpdate = cart.products.find((product) =>
-                product.id_product.toString() === productId
-            );
-
-            if (!productToUpdate) throw new Error(`No se encontró el producto con ID ${productId} en el carrito`);
-            
-
-            productToUpdate.quantity = quantity;
-            await cart.save();
-
+        try 
+        {
+            const cart = await cartsModel.findOne({ 'user': userId }).populate('user');
             return cart;
         } catch (error) 
         {
             throw error;
         }
+    }
+
+    createCart = async (cart) => 
+    {
+        try {
+            const newCart = new cartsModel(cart);
+            const savedCart = await newCart.save();
+            return savedCart;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+
+    updateProductQuantity = async (cartId, productId, quantity) => 
+    {
+        try 
+        {
+            const cart = await cartsModel.findById(cartId);
+            if (!cart) throw new Error(`No se encontró el carrito con ID ${cartId}`);
+            const productToUpdate = cart.products.find((product) =>product.id_product.toString() === productId);
+            if (!productToUpdate) cart.products.push({ id_product: productId, quantity });
+            else productToUpdate.quantity += quantity;  
+            await cart.save();
+    
+            return cart;
+        } catch (error) {throw error;}
     }
 
     removeProductFromCart = async (cartId, productId) => 
@@ -58,8 +73,7 @@ export default class CartsManager {
             });
 
             if (!cart) throw new Error(`No se encontró el carrito con ID ${cartId}`);
-            
-
+        
             return cart;
         } catch (error) 
         {

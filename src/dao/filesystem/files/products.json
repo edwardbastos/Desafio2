@@ -1,0 +1,102 @@
+[
+	{
+		"title": "Kyocera FS M3655idn",
+		"description": "Fotocopiadora multifuncional de alto rendimiento, 55 páginas por minuto y resolución de 1200 x 1200 ppp.",
+		"price": 1575,
+		"thumbnail": "https://www.kyoceradocumentsolutions.es/renditions/content/dam/kyocera/common/products/mfp/ECOSYSM3655IDN/mfp-540x540-angled-ecosysM3655idn.png/jcr%3Acontent/renditions/cq5dam.resized.img.540.medium.time1572527790801.png",
+		"code": "M3655idn",
+		"stock": 7,
+		"category": "Fotocopiadora",
+		"id": 1
+	},
+	{
+		"title": "Lexmark XM3150",
+		"description": "Fotocopiadora multifuncional eficiente diseñada para entornos de trabajo de alto rendimiento",
+		"price": 1849,
+		"thumbnail": "https://media.lexmark.com/www/product/standard/08/8254.png",
+		"code": "XM3150",
+		"stock": 5,
+		"category": "Fotocopiadora",
+		"id": 2
+	},
+	{
+		"title": "Ricoh MP 305",
+		"description": "Fotocopiadora multifuncional compacta y versátil a entornos de trabajo pequeños y medianos",
+		"price": 4415,
+		"thumbnail": "https://http2.mlstatic.com/D_NQ_NP_817590-MCO42263813830_062020-O.webp",
+		"code": "L5590",
+		"stock": 33,
+		"category": "Fotocopiadora",
+		"id": 3
+	},
+	{
+		"title": "HP Laserjet Pro M521dn",
+		"description": "Fotocopiadora multifuncional de alto rendimiento, 42 páginas por minuto y resolución de 1200 x 1200 ppp",
+		"price": 4299,
+		"thumbnail": "data:image/jpeg;base64,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",
+		"code": "M521",
+		"stock": 21,
+		"category": "Fotocopiadora",
+		"id": 4
+	},
+	{
+		"title": "EPSON Ecotank L3210",
+		"description": "La impresora EPSON Ecotank L3210 es un modelo que forma parte de la serie Ecotank de Epson",
+		"price": 167,
+		"thumbnail": "https://panamericana.vtexassets.com/arquivos/ids/405557-1200-auto?v=637666502565430000&width=1200&height=auto&aspect=true",
+		"code": "L3210",
+		"stock": 17,
+		"category": "Impresora",
+		"id": 5
+	},
+	{
+		"title": "CANON G610 De Tanque de Tinta Negro",
+		"description": "Impresora con sistema de tanque de tinta negra, parte de la serie de impresoras con tanques de tinta de Canon",
+		"price": 270,
+		"thumbnail": "https://www.alkosto.com/medias/013803317848-004-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMDEzNzZ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzVOeTlvT0RRdk9URXpNekV5TnpjeU9URTRNaTVxY0djfGYyNWQ2NThlZDNkZTVkMTRlOTlmMmUxMDU3ZTUzN2Y5Y2E4MmMzNDMzOWExOWEzM2M3YTFmOTJlZmIyYzM0OTQ",
+		"code": "G610",
+		"stock": 3,
+		"category": "Impresora",
+		"id": 6
+	},
+	{
+		"title": "mini Impresora Térmica Portátil panda Rápida",
+		"description": "Dispositivo compacto y ligero que utiliza tecnología térmica directa para imprimir recibos",
+		"price": 5,
+		"thumbnail": "https://practicompra.co/cdn/shop/products/222975693bdfec1fa7a667a55c8fbec3_600x600.jpg?v=1674578619",
+		"code": "panda",
+		"stock": 11,
+		"category": "Impresora",
+		"id": 7
+	},
+	{
+		"title": "Epson WorkForce Pro WF-6090",
+		"description": "Impresora de inyección de tinta diseñada para entornos de trabajo exigentes",
+		"price": 499,
+		"thumbnail": "https://mediaserver.goepson.com/ImConvServlet/imconv/97ed942376ff0094c67073bfd1c14ef71f59705e/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=wf6090_prod01_headon-clr-print_690x460",
+		"code": "WF-6090",
+		"stock": 2,
+		"category": "Impresora",
+		"id": 8
+	},
+	{
+		"title": "HP Smart Tank 519 Tinta Continua (3YW73A)",
+		"description": "La impresora HP Smart Tank 519 con tinta continua (3YW73A)",
+		"price": 4299,
+		"thumbnail": "https://megacomputer.com.co/wp-content/uploads/2023/05/impresora-hp-tank-519.jpg",
+		"code": "3YW73A",
+		"stock": 24,
+		"category": "Impresora",
+		"id": 9
+	},
+	{
+		"title": "Impresora de Prueba",
+		"description": "Impresora",
+		"stock": "22",
+		"thumbnail": "https://cdn.compudemano.com/wp-content/uploads/2023/03/epson-impresora-workforce-pro-wf-6090-1.png.webp",
+		"category": "Pruebas",
+		"price": "22",
+		"code": "212",
+		"id": 10
+	}
+]
