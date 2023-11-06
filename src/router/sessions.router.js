@@ -16,8 +16,10 @@ router.post('/register', async(req,res)=>
     {
         if (error) return res.status(500).send({ status: "error", error: "Internal server error" });
         if (!result) return res.status(400).send({ status: "error", error: info.message ? info.message : info.toString() });
-        res.status(200).send({ status: "success", payload: result._id });
+        res.status(200).send({ status: "success", message:"registrado correctamente", payload: result._id });
+        console.log(res.status);
     })(req, res);
+
 })
 
 router.post('/login', (req, res) => {
@@ -27,10 +29,12 @@ router.post('/login', (req, res) => {
         if (!user) return res.status(400).send({ status: "error", error: info.message ? info.message : info.toString() });
 
         //configuracion de token JWT y cookie asociada
-        const token = jwt.sign({ id: user._id, email: user.email, role: user.role, name: user.firstName }, 'GalletaTriste', { expiresIn: '1d' });
+        const token = jwt.sign({ id: user._id, name: user.firstName, email: user.email, role: user.role,  }, 'GalletaTriste', { expiresIn: '1d' });
         res.cookie('authCookie', token, { httpOnly: true }).send({ status: 'success', token });
+        console.log(res.status);
     })(req, res);
-});
+
+});   
 
 router.get('/current', passportCall('jwt'),authorization('user'),(req,res)=>
 {

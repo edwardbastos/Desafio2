@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/login.css">
 
-<main>
+<section class="main">
     <div class="container">
         <div class="back-box">
             <div class="back-box-login">
@@ -24,9 +24,9 @@
             <!--Login-->
             <form id="loginForm" class="login_Form">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="email">
-                <input type="password" placeholder="password">
-                <input class="submitBtn" type="submit" value="Entrar"></input>
+                <input name="email" type="text" placeholder="email">
+                <input name="password" type="password" placeholder="password">
+                <input class="submitBtn" type="submit" value="Iniciar sesión"></input>
                 <p id="first-child">Iniciar con cuenta de <a href="/api/sessions/github">Github</a>.</p>
                 <p>Iniciar con cuenta de <a href="/api/sessions/google">Google</a>.</p>
             </form>
@@ -36,11 +36,12 @@
                 <input name="firstName" placeholder="primer nombre" type="text">
                 <input name="lastName" placeholder="segundo nombre" type="text">
                 <input name="email" placeholder="email (user)" type="email">
+                <input name="age" placeholder="edad" type="number">
                 <input name="password" placeholder="password" type="password">
                 <input class="submitBtn" type="submit" value="Registrar usuario"></input>
             </form>
         </div>
     </div>
-</main>
+</section>
 
 <script src="/js/login.js"></script>

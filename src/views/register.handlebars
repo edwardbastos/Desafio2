@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="/css/login.css">
 
-<main>
+<section class="main">
     <div class="container">
-       <div class="back-box">
+        <div class="back-box">
             <div class="back-box-login">
                 <h3>¿Ya tienes una cuenta?</h3>
                 <p>Inicia sesión para entrar en la página</p>
@@ -13,7 +13,7 @@
             <div class="back-box-register">
                 <h3>¿Aún no tienes una cuenta?</h3>
                 <p>Regístrate para que puedas iniciar sesión</p>
-               <a href="/register">
+                <a href="/register">
                     <button id="btn-register">Regístrarse</button>
                 </a>
             </div>
@@ -22,13 +22,13 @@
         <!--Formulario de Login y registro-->
         <div class="container-login-register">
             <!--Login-->
-            <form id="loginForm" class="login_Form">
+           <form id="loginForm" class="login_Form">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="email">
-                <input type="password" placeholder="password">
+                <input name="email" type="text" placeholder="email">
+                <input name="password" type="password" placeholder="password">
                 <input class="submitBtn" type="submit" value="Iniciar sesión"></input>
-                <p>login mediante <a href="/api/sessions/github">github</a>.</p>
-                <p>login mediante <a href="/api/sessions/google">google</a>.</p>
+                <p id="first-child">Iniciar con cuenta de <a href="/api/sessions/github">Github</a>.</p>
+                <p>Iniciar con cuenta de <a href="/api/sessions/google">Google</a>.</p>
             </form>
             <!--Register-->
             <form id="registerForm" class="register_Form">
@@ -42,6 +42,6 @@
             </form>
         </div>
     </div>
-</main>
+</section>
 
 <script src="/js/register.js"></script>

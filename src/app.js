@@ -31,12 +31,14 @@ const app = express();
 //const FileStorage = FileStore(session);      
 const PORT = ENVPORT || 8080;
 const server = app.listen(PORT, ()=>console.log(`Escuchando en puerto ${PORT}`));
-try 
-{
-    const connection = await mongoose.connect(DB_URL, {useNewUrlParser: true,useUnifiedTopology: true});
-    console.log('Conexión a la base de datos exitosa');
-} catch (error) {console.error('Error de conexión a la base de datos:', error);}
 
+try {
+    const connection = await mongoose.connect(DB_URL);
+    console.log('Conexión a la base de datos exitosa');
+  } catch (error) {
+    console.error('Error de conexión a la base de datos:', error);
+  }
+  
 
 //configuracion de handlebars
 const hbs = exphbs.create({
