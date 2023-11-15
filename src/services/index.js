@@ -1,7 +1,7 @@
-import ProductRepository from "./product.services.js";
-import CartRepository from "./cart.services.js";
+import ProductRepository from "./repositories/ProductRepository.js";
+import CartRepository from "./repositories/CartRepository.js";
 import PersistenceFactory from "../dao/PersistenceFactory.js";
-import TicketRepository  from "./ticket.services.js";
+import TicketRepository  from "./repositories/TicketRepository.js";
 
 
 const { productsDao, cartsDao, ticketsDao } = await PersistenceFactory.getPersistence();
